@@ -1,14 +1,5 @@
 'use strict';
 
-// Loader
-var loader = document.querySelector(".loader")
-
-window.addEventListener("load", vanish);
-
-function vanish() {
-	loader.classList.add("disppear");
-}
-
 // Navbar toggle
 
 const overlay = document.querySelector("[data-overlay]");
@@ -195,3 +186,13 @@ function stopPrntScr() {
             }
         }
         setInterval("AccessClipboardData()", 300);
+
+
+		// Loader
+var loader = document.querySelector(".loader")
+
+window.addEventListener("load", vanish);
+
+function vanish() {
+	loader.classList.add("disppear");
+}
